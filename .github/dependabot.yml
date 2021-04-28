@@ -1,0 +1,42 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@types/node"
+    versions:
+    - 14.14.22
+    - 14.14.24
+    - 14.14.25
+    - 14.14.28
+    - 14.14.30
+  - dependency-name: "@babel/preset-typescript"
+    versions:
+    - 7.12.16
+  - dependency-name: "@babel/core"
+    versions:
+    - 7.12.16
+  - dependency-name: "@babel/plugin-transform-react-jsx"
+    versions:
+    - 7.12.12
+    - 7.12.13
+  - dependency-name: "@typescript-eslint/parser"
+    versions:
+    - 4.14.1
+    - 4.14.2
+  - dependency-name: "@typescript-eslint/eslint-plugin"
+    versions:
+    - 4.14.1
+    - 4.14.2
+  - dependency-name: next-pwa
+    versions:
+    - 5.0.4
+  - dependency-name: eslint
+    versions:
+    - 7.18.0
+  - dependency-name: next
+    versions:
+    - 10.0.5
